@@ -228,5 +228,5 @@ Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdo
 [2022/05/13 23:07:50] root INFO:  total time spent(s): 2.9778
 [2022/05/13 23:07:50] root INFO:  preprocess_time(ms): 2800.4625, inference_time(ms): 177.2206, postprocess_time(ms): 0.0732
 image_name: data/LSVRC2012/train/n02100877/n02100877_10277.JPEG, class_id: 213, prob: 10.11275863647461
- Run successfully with command - python CaiT/infer.py --model-dirs=CaiT/infer --img-path='data/LSVRC2012/train/n02100877/n02100877_10277.JPEG' --use-gpu=False --model-dir=./log/CaiT/lite_train_lite_infer/norm_train_gpus_0 --batch-size=1   --benchmark=True > ./log/CaiT/lite_train_lite_infer/python_infer_cpu_batchsize_1.log 2>&1 ! 
+ Run successfully with command - python CaiT/infer.py --model-dirs=CaiT/infer --img-path='data/LSVRC2012/train/n02100877/n02100877_10277.JPEG' --use-gpu=False --model-dir=./log/CaiT/lite_train_lite_infer/norm_train_gpus_0 --batch-size=1   --benchmark=True > ./log/CaiT/lite_train_lite_infer/python_infer_cpu_batchsize_1.log 2>&1 !  
 ```
