@@ -1,0 +1,32 @@
+===========================train_params===========================
+model_name:CaiT
+python:python
+gpu_list:0
+use-gpu:True|True
+-epochs:lite_train_lite_infer=2
+-output_dir:./output/
+-batch_size:lite_train_lite_infer=4
+-pretrained:CaiT/cait_xxs24_224
+train_model_name:latest.pdparams
+--data-path:./lite_data
+##
+trainer:norm_train
+norm_train:CaiT/main_single_gpu.py -cfg='CaiT/configs/cait_xxs24_224.yaml' -dataset='imagenet2012' -batch_size=10 -pretrained='CaiT/cait_xxs24_224' -data_path='data/LSVRC2012'
+##
+===========================eval_params===========================
+eval:null
+##
+===========================infer_params===========================
+--save-inference-dir:null
+--pretrained:null
+norm_export:CaiT/export_model.py --model_path=output/best_model.pdparams
+##
+train_model:null
+infer_export:export_model.py --model=null
+##
+inference:CaiT/infer.py --model-dirs=CaiT/infer --img-path='data/LSVRC2012/train/n02100877/n02100877_10277.JPEG'
+--use-gpu:True|False
+--batch-size:1
+--model-dir:null
+--img-path:null
+--benchmark:True
