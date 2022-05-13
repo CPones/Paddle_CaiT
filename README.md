@@ -17,7 +17,7 @@
   - [5.2 基于Inference的推理](#5.1)
 - [6. 自动化测试脚本](#6)
 - [7. LICENSE](#7)
-- [8. 参考链接与文献](#8)
+- [8. 相关信息](#8)
 
 <a id="1"></a>
 
@@ -188,7 +188,22 @@ image_name: data/LSVRC2012/train/n02100877/n02100877_10277.JPEG, class_id: 213, 
 ```
 !bash test_tipc/test_train_inference_python.sh test_tipc/configs/CaiT/train_infer_python.txt 'lite_train_lite_infer'
 ```
-详细输出见`test_tipc`下的[readme.md]()
+详细输出见`test_tipc`下的[readme.md](./test_tipc/README.md)
 ## 7. LICENSE
+本项目的发布受[Apache 2.0 license](./LICENSE)许可认证。
 
-## 8. 参考链接与文献
+## 8. 相关信息
+| 信息     | 描述                                                                                       |
+| -------- |------------------------------------------------------------------------------------------|
+| 作者     | [CPones](https://github.com/CPones) 、 [ELKYang](https://github.com/ELKYang)              |
+| 日期     | 2022年5月                                                                                  |
+| 框架版本 | PaddlePaddle==2.2.0                                                                      |
+| 应用场景 | 图像分类，视觉Transformer                                                                       |
+| 硬件支持 | GPU, CPU                                                                                 |
+| AIStudio地址 | [Notebook](https://aistudio.baidu.com/aistudio/projectdetail/3856073?contributionType=1) |
+
+代码参考：https://github.com/facebookresearch/deit
+
+感谢 [ELKYang](https://github.com/ELKYang) 完善代码结构，并提供TIPC支持。
+
+感谢百度飞浆团队提供的算力支持！
