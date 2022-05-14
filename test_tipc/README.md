@@ -49,6 +49,7 @@ bash test_tipc/test_train_inference_python.sh ./test_tipc/configs/CaiT/train_inf
 ```
 
 ## 3.TIPC测试成功日志
+日志文件保存于`test_tipc/lite_train_lite_infer`
 ```
 merging config from CaiT/configs/cait_xxs24_224.yaml
 0513 11:06:40 PM config= AMP: False
