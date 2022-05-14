@@ -1,0 +1,37 @@
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/tensor/creation.py:130: DeprecationWarning: `np.object` is a deprecated alias for the builtin `object`. To silence this warning, use `object` by itself. Doing this will not modify any behavior and is safe. 
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  if data.dtype == np.object:
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/auto_log/env.py:53: DeprecationWarning: distro.linux_distribution() is deprecated. It should only be used as a compatibility shim with Python's platform.linux_distribution(). Please use distro.id(), distro.version() and distro.name() instead.
+  plat = distro.linux_distribution()[0]
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/auto_log/env.py:54: DeprecationWarning: distro.linux_distribution() is deprecated. It should only be used as a compatibility shim with Python's platform.linux_distribution(). Please use distro.id(), distro.version() and distro.name() instead.
+  ver = distro.linux_distribution()[1]
+[2022/05/13 23:07:50] root INFO: 
+
+[2022/05/13 23:07:50] root INFO: ---------------------- Env info ----------------------
+[2022/05/13 23:07:50] root INFO:  OS_version: Ubuntu 16.04
+[2022/05/13 23:07:50] root INFO:  CUDA_version: 10.1.243
+[2022/05/13 23:07:50] root INFO:  CUDNN_version: 7.3.1
+[2022/05/13 23:07:50] root INFO:  drivier_version: 460.32.03
+[2022/05/13 23:07:50] root INFO: ---------------------- Paddle info ----------------------
+[2022/05/13 23:07:50] root INFO:  paddle_version: 2.2.2
+[2022/05/13 23:07:50] root INFO:  paddle_commit: b031c389938bfa15e15bb20494c76f86289d77b0
+[2022/05/13 23:07:50] root INFO:  log_api_version: 1.0
+[2022/05/13 23:07:50] root INFO: ----------------------- Conf info -----------------------
+[2022/05/13 23:07:50] root INFO:  runtime_device: cpu
+[2022/05/13 23:07:50] root INFO:  ir_optim: True
+[2022/05/13 23:07:50] root INFO:  enable_memory_optim: True
+[2022/05/13 23:07:50] root INFO:  enable_tensorrt: False
+[2022/05/13 23:07:50] root INFO:  enable_mkldnn: False
+[2022/05/13 23:07:50] root INFO:  cpu_math_library_num_threads: 1
+[2022/05/13 23:07:50] root INFO: ----------------------- Model info ----------------------
+[2022/05/13 23:07:50] root INFO:  model_name: classification
+[2022/05/13 23:07:50] root INFO:  precision: fp32
+[2022/05/13 23:07:50] root INFO: ----------------------- Data info -----------------------
+[2022/05/13 23:07:50] root INFO:  batch_size: 1
+[2022/05/13 23:07:50] root INFO:  input_shape: dynamic
+[2022/05/13 23:07:50] root INFO:  data_num: 1
+[2022/05/13 23:07:50] root INFO: ----------------------- Perf info -----------------------
+[2022/05/13 23:07:50] root INFO:  cpu_rss(MB): 1598.7656, gpu_rss(MB): None, gpu_util: None%
+[2022/05/13 23:07:50] root INFO:  total time spent(s): 2.9778
+[2022/05/13 23:07:50] root INFO:  preprocess_time(ms): 2800.4625, inference_time(ms): 177.2206, postprocess_time(ms): 0.0732
+image_name: data/LSVRC2012/train/n02100877/n02100877_10277.JPEG, class_id: 213, prob: 10.11275863647461
